@@ -46,7 +46,7 @@ roslaunch robot_object_views eraservisiondebug.launch
 Finally, in a third terminal, enter:
 
 ```
-rosrun robot_object_views robot_object_views
+rosrun robot_object_views robot_object_views.py
 ```
 
 
