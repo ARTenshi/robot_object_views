@@ -44,7 +44,7 @@ gripper = robot.get('gripper')
 tf_buffer = robot._get_tf2_buffer()
 
 #erasers libraries
-from erasers_nav_msgs.srv import GetObjectsCentroid, GetClosestPoint, GetSpaceCentroid
+from erasers_nav_msgs.srv import GetObjectsCentroid
 
 whole_body.move_to_neutral()
 rospy.loginfo('initializing...')
@@ -53,8 +53,8 @@ rospy.sleep(3)
 _rgb_mat = 0
 _rgb = False
 
-_path_xml = "/home/roboworks/ycb_ws/src/robot_object_views/models/MODEL_NAME/model-1_4.sdf"
-_path_model = "/home/roboworks/ycb_ws/src/robot_object_views/models"
+_path_xml = "/home/roboworks/ycb_ws/src/robot_object_views/robotobject/models/MODEL_NAME/model-1_4.sdf"
+_path_model = "/home/roboworks/ycb_ws/src/robot_object_views/robotobject/models"
 
 model_database_template = """<sdf version="1.4">
   <world name="default">

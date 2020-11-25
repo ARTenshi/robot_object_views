@@ -1,0 +1,5 @@
+<launch>
+
+   <node name="object_finder_srv" pkg="erasers_object_finder" type="object_finder_srv" args="-dy_offset 0.04" respawn="true" output="screen"/>
+
+</launch>
